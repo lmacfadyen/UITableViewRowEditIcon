@@ -11,10 +11,8 @@ import UIKit
 class BookTableViewCell: UITableViewCell {
 
     @IBOutlet weak var buttonWidth: NSLayoutConstraint!
-    
     @IBOutlet weak var buttonView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var authorLabel: UILabel!
     
     override func awakeFromNib() {

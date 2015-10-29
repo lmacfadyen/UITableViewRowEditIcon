@@ -49,27 +49,26 @@
         <scene sceneID="AnP-2Y-fUa">
             <objects>
                 <tableViewController title="Awesome Swift Books" id="yQq-zZ-bn3" customClass="TableWithEditIconsController" customModule="UITableViewRowEditIcon" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zoT-va-bS4">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="zoT-va-bS4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookCell" id="w1d-dB-wU6" customClass="BookTableViewCell" customModule="UITableViewRowEditIcon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="56"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w1d-dB-wU6" id="1gQ-3p-lOy">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view tag="1" contentMode="scaleToFill" horizontalHuggingPriority="245" horizontalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="shP-1l-bKK" userLabel="DataView">
-                                            <rect key="frame" x="10" y="0.0" width="585" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="585" height="55"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="245" verticalCompressionResistancePriority="755" text="Book" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFd-cM-RQf" userLabel="TitleLabel">
                                                     <rect key="frame" x="5" y="5" width="575" height="24"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=regular">
                                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -79,10 +78,9 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD5-Hx-eLi" userLabel="AuthorLabel">
-                                                    <rect key="frame" x="5" y="32" width="575" height="6"/>
+                                                    <rect key="frame" x="5" y="32" width="575" height="18"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=regular">
                                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -105,10 +103,10 @@
                                             </constraints>
                                         </view>
                                         <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-eC-ukx" userLabel="ButtonView">
-                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="55"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKa-tp-Beb" userLabel="EditButton">
-                                                    <rect key="frame" x="-15" y="11" width="30" height="26"/>
+                                                    <rect key="frame" x="-15" y="17" width="30" height="26"/>
                                                     <animations/>
                                                     <state key="normal" image="EditIcon"/>
                                                     <connections>
@@ -137,6 +135,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="authorLabel" destination="GD5-Hx-eLi" id="7eL-F6-A1J"/>
                                     <outlet property="buttonView" destination="DOf-eC-ukx" id="X72-EQ-2KB"/>

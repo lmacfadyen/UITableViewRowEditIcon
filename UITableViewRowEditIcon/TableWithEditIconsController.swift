@@ -15,7 +15,7 @@ class TableWithEditIconsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.estimatedRowHeight = 44.0
+        tableView.estimatedRowHeight = 56.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
@@ -28,16 +28,12 @@ class TableWithEditIconsController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell:BookTableViewCell = tableView.dequeueReusableCellWithIdentifier("bookCell") as! BookTableViewCell
-        
-        if books.count > 0
-        {
-            let book = books[indexPath.row]
-            
-            cell.authorLabel.text = "- " + book.author
-            cell.titleLabel.text = book.title
-            
-        }
 
+        let book = books[indexPath.row]
+            
+        cell.authorLabel.text = "- " + book.author
+        cell.titleLabel.text = book.title
+            
         if(tableView.editing && self.tableView(tableView, canEditRowAtIndexPath: indexPath))
         {
             cell.buttonView.hidden = false
@@ -64,13 +60,13 @@ class TableWithEditIconsController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             books.removeAtIndex(indexPath.row)
-            setEditing(false, animated: true)
+            tableView.reloadData()
         }
     }
     
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
 
 }
