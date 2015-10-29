@@ -12,6 +12,12 @@
 		1108948E1BE15B680099BFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1108948C1BE15B680099BFCB /* Main.storyboard */; };
 		110894901BE15B680099BFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1108948F1BE15B680099BFCB /* Assets.xcassets */; };
 		110894931BE15B680099BFCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110894911BE15B680099BFCB /* LaunchScreen.storyboard */; };
+		1108949C1BE15E810099BFCB /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108949B1BE15E810099BFCB /* Book.swift */; };
+		1108949E1BE15EFD0099BFCB /* TableWithEditIconsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108949D1BE15EFD0099BFCB /* TableWithEditIconsController.swift */; };
+		110894A41BE169050099BFCB /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110894A31BE169050099BFCB /* BookTableViewCell.swift */; };
+		110894A81BE16E8E0099BFCB /* EditButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 110894A51BE16E8E0099BFCB /* EditButtonIcon.png */; };
+		110894A91BE16E8E0099BFCB /* EditButtonIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 110894A61BE16E8E0099BFCB /* EditButtonIcon@2x.png */; };
+		110894AA1BE16E8E0099BFCB /* EditButtonIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 110894A71BE16E8E0099BFCB /* EditButtonIcon@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		1108948F1BE15B680099BFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		110894921BE15B680099BFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		110894941BE15B680099BFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1108949B1BE15E810099BFCB /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		1108949D1BE15EFD0099BFCB /* TableWithEditIconsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableWithEditIconsController.swift; sourceTree = "<group>"; };
+		110894A31BE169050099BFCB /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		110894A51BE16E8E0099BFCB /* EditButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EditButtonIcon.png; sourceTree = "<group>"; };
+		110894A61BE16E8E0099BFCB /* EditButtonIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EditButtonIcon@2x.png"; sourceTree = "<group>"; };
+		110894A71BE16E8E0099BFCB /* EditButtonIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EditButtonIcon@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +68,26 @@
 			children = (
 				110894881BE15B680099BFCB /* AppDelegate.swift */,
 				1108948A1BE15B680099BFCB /* ViewController.swift */,
+				1108949D1BE15EFD0099BFCB /* TableWithEditIconsController.swift */,
+				110894A31BE169050099BFCB /* BookTableViewCell.swift */,
+				1108949B1BE15E810099BFCB /* Book.swift */,
 				1108948C1BE15B680099BFCB /* Main.storyboard */,
 				1108948F1BE15B680099BFCB /* Assets.xcassets */,
 				110894911BE15B680099BFCB /* LaunchScreen.storyboard */,
 				110894941BE15B680099BFCB /* Info.plist */,
+				1108949A1BE15B760099BFCB /* Images */,
 			);
 			path = UITableViewRowEditIcon;
+			sourceTree = "<group>";
+		};
+		1108949A1BE15B760099BFCB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				110894A51BE16E8E0099BFCB /* EditButtonIcon.png */,
+				110894A61BE16E8E0099BFCB /* EditButtonIcon@2x.png */,
+				110894A71BE16E8E0099BFCB /* EditButtonIcon@3x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +148,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110894AA1BE16E8E0099BFCB /* EditButtonIcon@3x.png in Resources */,
+				110894A81BE16E8E0099BFCB /* EditButtonIcon.png in Resources */,
 				110894931BE15B680099BFCB /* LaunchScreen.storyboard in Resources */,
 				110894901BE15B680099BFCB /* Assets.xcassets in Resources */,
 				1108948E1BE15B680099BFCB /* Main.storyboard in Resources */,
+				110894A91BE16E8E0099BFCB /* EditButtonIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +166,9 @@
 			files = (
 				1108948B1BE15B680099BFCB /* ViewController.swift in Sources */,
 				110894891BE15B680099BFCB /* AppDelegate.swift in Sources */,
+				1108949C1BE15E810099BFCB /* Book.swift in Sources */,
+				110894A41BE169050099BFCB /* BookTableViewCell.swift in Sources */,
+				1108949E1BE15EFD0099BFCB /* TableWithEditIconsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
