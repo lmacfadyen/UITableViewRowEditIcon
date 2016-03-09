@@ -10,7 +10,7 @@ import UIKit
 
 class TableWithEditIconsController: UITableViewController {
     
-    var books = [Book(title: "The Swift Programming Language (Swift 2)", author: "Apple Inc."), Book(title: "Swift Algorithms and Data Structures", author: "Wayne Bishop"), Book(title: "Advanced Swift", author: "Chris Eidhof/Airspeed Velocity") ]
+    var books = [Book(title: "The Swift Programming Language (Swift 2)", author: "Apple Inc."), Book(title: "Swift Algorithms and Data Structures", author: "Wayne Bishop"), Book(title: "Advanced Swift", author: "Chris Eidhof/Airspeed Velocity"), Book(title: "iOS Programming", author: "Big Nerd Ranch"), Book(title: "Test-Driven iOS Development With Swift", author: "Dr. Dominik Hauser") ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
