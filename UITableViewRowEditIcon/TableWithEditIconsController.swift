@@ -16,7 +16,7 @@ class TableWithEditIconsController: UITableViewController {
         super.viewDidLoad()
         
         tableView.estimatedRowHeight = 56.0
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         
         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -57,7 +57,7 @@ class TableWithEditIconsController: UITableViewController {
         return true
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             books.remove(at: indexPath.row)
             tableView.reloadData()
